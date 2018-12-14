@@ -1,0 +1,16 @@
+eche Welcome for creating a file
+echo What should be the name of the file?
+read filname
+echo are you sure you want to create a file with this name: $filname
+read response 
+if [ $response = yes ];then
+   touch $filname.txt
+else 
+   echo what should be the file name?
+read filename
+   echo are you sure you want to create file with this name?
+read response1
+if [ $response1 = yes ];then
+   touch $filename.txt
+else 
+ bye
